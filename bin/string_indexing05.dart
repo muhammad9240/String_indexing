@@ -8,5 +8,14 @@ String func(String s) {
         str: answer
     """;
   //your code here
-  return '';
+  String answen;
+  if(s.length % 2 == 0){
+    return answen = s[s.length ~/2 - 1] + s[s.length ~/2];
+  }else{
+    return answen = s[s.length ~/2];
+  }
+  return answen;
+}
+void main(){
+  print(func('gssggdg'));
 }
